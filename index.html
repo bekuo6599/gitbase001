@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The First Code I have ever Written</title>
+        <script>
+            function handleSubmit() {
+                // get the form element
+                var form = document.getElementById("myForm");
+
+                // submit the form
+                form.submit();
+                
+                // display success message
+                var message = document.getElementById("successMessage");
+                message.innerHTML = "Form submitted successfully!";
+            }
+        </script>
+    </head>
+    <body>
+        <p> Hello World! This is the First Code I have Ever Written</p>
+        <a href="https:www.unsplash.com">click this link to go to unsplash</a>
+        <p>
+            <h1>A Simple Biodata Form</h1>
+        </p>
+
+        <form id="MyForm" method="post" action="submit.php">
+            <fieldset>
+                <legend>Biodata</legend>
+                <label for="Fullname">Fullname</label>
+                <input type="text" name="Fullname" id="Fullname">
+                <label for="email">email</label>
+                <input type="email" name="email" id="email">
+                <label for="Phone number">Phone number</label>
+                <input type="number" name="Phone number" id="Phone number">
+                <label for="Date of birth">Date of birth</label>
+                <input type="date" name="Date of birth" id="Date of birth">
+                <label for="Male">Male</label>
+                <input type="radio" name="gender" id="Male" value="Male">
+                <label for="Female">female</label>
+                <input type="radio" name="gender" id="Female" value="Female"> <br>
+                <label for="Password">Password</label>
+                <input type="password" name="Password" id="Password"> <br> 
+                <br>
+                <aside style="float: right;">
+                    <input type="button" value="submit" onclick="handleSubmit()" style="color: rgb(11, 7, 224);">
+                </aside>
+            </fieldset>
+        </form>
+    </body>
+</html>
